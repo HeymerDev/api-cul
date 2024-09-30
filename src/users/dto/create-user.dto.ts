@@ -20,7 +20,7 @@ export class CreateUserDto {
     email: string;
 
     @MinLength(10, {
-        message: 'Address is too short (minimum is 10 characters
+        message: 'Address is too short (minimum is 10 characters'
     })
     address: string;
 
