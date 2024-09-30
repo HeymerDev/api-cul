@@ -10,4 +10,10 @@ export class User {
 
     @Column()
     age: number;
+
+    @Column({ nullable: true })
+    email: string;
+
+    @Column({ nullable: true })
+    address: string;
 }
