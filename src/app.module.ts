@@ -6,6 +6,8 @@ import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './users/entities/user.entity';
 import { Client } from './client/entities/client.entity';
+import { AuthModule } from './auth/auth.module';
+
 
 @Module({
   imports: [ClientModule, UsersModule, TypeOrmModule.forRoot({
@@ -17,7 +19,7 @@ import { Client } from './client/entities/client.entity';
     database: 'culdb',
     entities: [User, Client],
     synchronize: true,
-  }),],
+  }), AuthModule],
   controllers: [AppController],
   providers: [AppService],
 })

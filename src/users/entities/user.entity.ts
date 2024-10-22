@@ -8,7 +8,7 @@ export class User {
     @Column()
     name: string;
 
-    @Column()
+    @Column({ nullable: true })
     age: number;
 
     @Column({ nullable: true })
@@ -16,4 +16,7 @@ export class User {
 
     @Column({ nullable: true })
     address: string;
+
+    @Column({ nullable: true })
+    password: string;
 }
