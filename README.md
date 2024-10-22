@@ -1,7 +1,7 @@
 # API REST con NestJS, TypeORM y PostgreSQL
 
 Este proyecto es una API REST desarrollada con NestJS que permite listar **usuarios** y **clientes**. Utiliza **TypeORM** para la administración de la base de datos en **PostgreSQL**. En el servicio de clientes, se devuelven dos usuarios de prueba.
-Esta aplicacion se ejecuta por defecto en <a href="http://localhost:3000">localhost:3000</a>
+Esta aplicacion se ejecuta por defecto en <a href="http://localhost:3000/api/v1">localhost:3000/api/v1</a>
 
 
 ## Características
